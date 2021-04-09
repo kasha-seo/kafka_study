@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: kafka
+spec:
+  rules:
+    - host: kafka-confluent.ing.kasha-test.k8s.9rum.cc
+      http:
+        paths:
+          - backend:
+              serviceName: kafka
+              servicePort: 9092
