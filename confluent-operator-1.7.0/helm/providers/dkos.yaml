@@ -49,7 +49,7 @@ kafka:
       cpu: 200m
       memory: 1Gi
   loadBalancer:
-    enabled: false
+    enabled: true
     domain: ""
   tls:
     enabled: false
